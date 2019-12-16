@@ -5,10 +5,13 @@ public class Main {
 
     public static void main(String[] args) {
         String emailAddress = "john.doe.mis2016@ie.edu";
-        String formattedEmailAddress = emailAddress.replaceAll(".", "/");
+        String formattedEmailAddress = emailAddress.replaceAll("\\.", "/");
+        // 1.  The problem here is that the "." are not being replaced by "/" by editining the the regex to "\\.", we solve this problem and the "." replace the "."
+
 
         Random random = new Random();
         StringBuffer word = null;
+
 
         switch (random.nextInt(2)) {
             case 0:

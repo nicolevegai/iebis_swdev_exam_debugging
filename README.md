@@ -48,3 +48,11 @@ Scoring criteria:
 - 60%: Spot all the bugs
 - 20%: Fix all the bugs and push the proposed solution to your repository online
 - 20%: Explain the solved exercise in the README, in the best possible way
+
+## BUGS FOUND
+1. Line 8
+    String formattedEmailAddress = emailAddress.replaceAll(".", "/");  
+  The problem was that the "." are not being replaced by "/" by editing the the regex to "\\.", we solve this problem and the "." replace the "."  
+    String formattedEmailAddress = emailAddress.replaceAll("\\.", "/"); 
+    
+2. 
