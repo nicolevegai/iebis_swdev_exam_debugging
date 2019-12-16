@@ -57,11 +57,9 @@ Scoring criteria:
   The problem was that the "." are not being replaced by "/" by editing the the regex to "\\.", we solve this problem and the "." replace the ".".  
      **Corrected:**
     
-    String formattedEmailAddress = emailAddress.replaceAll("\\.", "/"); 
+        String formattedEmailAddress = emailAddress.replaceAll("\\.", "/"); 
     
 2. **Second bug**
-
-
         case 0:
             word = new StringBuffer('Y');
         case 1:
@@ -88,7 +86,7 @@ The Y, F and I are chars and can the StringBuffer method accepts only strings so
       
         switch (random.nextInt(3)) 
         
-4. ** Fourth Bug**
+4. **Fourth Bug**
       
  
          case 0:
@@ -98,7 +96,8 @@ The Y, F and I are chars and can the StringBuffer method accepts only strings so
          case 2:
              word = new StringBuffer("T");
              
-   As there is no break in each case only one case runs so we need to add a break point after every case so if the random selects that case it breaks and continues to apeend the "o", "u", "r" 
+   As there is no break in each case only one case runs so we need to add a break point after every case so if the random selects that case it breaks and continues to apeend the "o", "u", "r".  
+   
    **Corrected:**
    
          case 0:
