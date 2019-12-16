@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         String emailAddress = "john.doe.mis2016@ie.edu";
-        String formattedEmailAddress = emailAddress.replaceAll("\\.", "/"); 
+        String formattedEmailAddress = emailAddress.replaceAll("\\.", "/");
 
 
 
