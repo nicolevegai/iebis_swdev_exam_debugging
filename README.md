@@ -54,7 +54,7 @@ Scoring criteria:
                
         String formattedEmailAddress = emailAddress.replaceAll(".", "/");  
   
-  The problem was that the "." are not being replaced by "/" by editing the the regex to " \\.", we solve this problem and the "/" replace the ".". The [replaceAll()](https://beginnersbook.com/2013/12/java-string-replace-replacefirst-replaceall-method-examples/) method replaces all the occurrences of old string with the new string.  
+    The problem was that the "." are not being replaced by "/" by editing the the regex to " \\.", we solve this problem and the "/" replace the ".". The [replaceAll()](https://beginnersbook.com/2013/12/java-string-replace-replacefirst-replaceall-method-examples/) method replaces all the occurrences of old string with the new string.  
    
    **Corrected:**
     
@@ -68,7 +68,7 @@ Scoring criteria:
             word = new StringBuffer('F');
         case 2:
             word = new StringBuffer('T');
-The Y, F and I are chars and can the StringBuffer method accepts only strings so we need to convert them to strings.  
+  The Y, F and I are chars and can the StringBuffer method accepts only strings so we need to convert them to strings.  
   
   **Corrected:**
 
@@ -83,7 +83,7 @@ The Y, F and I are chars and can the StringBuffer method accepts only strings so
 
         switch (random.nextInt(2)) 
         
-   If the boundary of the random is only 2 it will only take the case 0 and 1 and ignore case 2 so we need to add the bound to 3.  
+     If the boundary of the random is only 2 it will only take the case 0 and 1 and ignore case 2 so we need to add the bound to 3.  
       **Corrected:**
       
         switch (random.nextInt(3)) 
