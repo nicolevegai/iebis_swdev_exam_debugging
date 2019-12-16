@@ -12,14 +12,14 @@ public class Main {
         Random random = new Random();
         StringBuffer word = null;
 
-
+        //2. the Y, F and I are chars and can not be added to a string so we need to convert them to strings.
         switch (random.nextInt(2)) {
             case 0:
-                word = new StringBuffer('Y');
+                word = new StringBuffer("Y");
             case 1:
-                word = new StringBuffer('F');
+                word = new StringBuffer("F");
             case 2:
-                word = new StringBuffer('T');
+                word = new StringBuffer("T");
         }
 
         word.append('o');

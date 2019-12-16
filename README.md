@@ -55,4 +55,18 @@ Scoring criteria:
   The problem was that the "." are not being replaced by "/" by editing the the regex to "\\.", we solve this problem and the "." replace the "."  
     String formattedEmailAddress = emailAddress.replaceAll("\\.", "/"); 
     
-2. 
+2. Line 18, 20, 22
+                case 0:
+                 word = new StringBuffer('Y');
+                case 1:
+                    word = new StringBuffer('F');
+                case 2:
+                    word = new StringBuffer('T');
+The Y, F and I are chars and can not be added to a string so we need to convert them to strings.
+
+                           case 0:
+                              word = new StringBuffer("Y");
+                          case 1:
+                              word = new StringBuffer("F");
+                          case 2:
+                              word = new StringBuffer("T");
