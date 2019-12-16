@@ -61,6 +61,7 @@ Scoring criteria:
         String formattedEmailAddress = emailAddress.replaceAll("\\.", "/"); 
     
 2. **Second bug**
+
         case 0:
             word = new StringBuffer('Y');
         case 1:
