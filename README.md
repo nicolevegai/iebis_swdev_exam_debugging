@@ -50,7 +50,7 @@ Scoring criteria:
 - 20%: Explain the solved exercise in the README, in the best possible way
 
 ## BUGS FOUND
-1. **Line 8**
+1. **First Bug**
                
   
     String formattedEmailAddress = emailAddress.replaceAll(".", "/");  
@@ -59,7 +59,7 @@ Scoring criteria:
     
     String formattedEmailAddress = emailAddress.replaceAll("\\.", "/"); 
     
-2. **Line 18, 20, 22**
+2. **Second bug**
 
 
         case 0:
@@ -76,8 +76,10 @@ The Y, F and I are chars and can not be added to a string so we need to convert 
           word = new StringBuffer("F");
       case 2:
           word = new StringBuffer("T");
-3. **Line 16**
+3. **Third Bug**
 
         switch (random.nextInt(2)) 
         
    If the bound is only 2 it will only take the case 0 and 1 and ignore case 2 so we need to add the bound to 3
+    
+        switch (random.nextInt(3)) 
