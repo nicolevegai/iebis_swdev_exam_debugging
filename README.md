@@ -50,23 +50,34 @@ Scoring criteria:
 - 20%: Explain the solved exercise in the README, in the best possible way
 
 ## BUGS FOUND
-1. Line 8
+1. **Line 8**
+               
+  
     String formattedEmailAddress = emailAddress.replaceAll(".", "/");  
+  
   The problem was that the "." are not being replaced by "/" by editing the the regex to "\\.", we solve this problem and the "." replace the "."  
+    
     String formattedEmailAddress = emailAddress.replaceAll("\\.", "/"); 
     
-2. Line 18, 20, 22
-                case 0:
-                 word = new StringBuffer('Y');
-                case 1:
-                    word = new StringBuffer('F');
-                case 2:
-                    word = new StringBuffer('T');
+2. **Line 18, 20, 22**
+
+
+        case 0:
+            word = new StringBuffer('Y');
+        case 1:
+            word = new StringBuffer('F');
+        case 2:
+            word = new StringBuffer('T');
 The Y, F and I are chars and can not be added to a string so we need to convert them to strings.
 
-                           case 0:
-                              word = new StringBuffer("Y");
-                          case 1:
-                              word = new StringBuffer("F");
-                          case 2:
-                              word = new StringBuffer("T");
+      case 0:
+          word = new StringBuffer("Y");
+      case 1:
+          word = new StringBuffer("F");
+      case 2:
+          word = new StringBuffer("T");
+3. **Line 16**
+
+        switch (random.nextInt(2)) 
+        
+   If the bound is only 2 it will only take the case 0 and 1 and ignore case 2 so we need to add the bound to 3
