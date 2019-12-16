@@ -68,16 +68,16 @@ Scoring criteria:
             word = new StringBuffer('F');
         case 2:
             word = new StringBuffer('T');
-  The Y, F and I are chars and can the StringBuffer method accepts only strings so we need to convert them to strings.  
+   The Y, F and I are chars and can the StringBuffer method accepts only strings so we need to convert them to strings.  
   
-  **Corrected:**
+    **Corrected:**
 
-      case 0:
-          word = new StringBuffer("Y");
-      case 1:
-          word = new StringBuffer("F");
-      case 2:
-          word = new StringBuffer("T");
+        case 0:
+            word = new StringBuffer("Y");
+        case 1:
+            word = new StringBuffer("F");
+        case 2:
+            word = new StringBuffer("T");
           
 3. **Third Bug**
 
@@ -99,9 +99,9 @@ Scoring criteria:
          case 2:
              word = new StringBuffer("T");
              
-   As there is no break in each case only one case runs so we need to add a break point after every case so if the random selects that case it breaks and continues to apeend the "o", "u", "r".  
+    As there is no break in each case only one case runs so we need to add a break point after every case so if the random selects that case it breaks and continues to apeend the "o", "u", "r".  
    
-   **Corrected:**
+    **Corrected:**
    
          case 0:
           word = new StringBuffer("Y");
