@@ -54,8 +54,9 @@ Scoring criteria:
                
         String formattedEmailAddress = emailAddress.replaceAll(".", "/");  
   
-  The problem was that the "." are not being replaced by "/" by editing the the regex to " \\.", we solve this problem and the "/" replace the ".". The [replaceAll()](https://beginnersbook.com/2013/12/java-string-replace-replacefirst-replaceall-method-examples/) method replaces all the occurrences of old string with the new string. 
-     **Corrected:**
+  The problem was that the "." are not being replaced by "/" by editing the the regex to " \\.", we solve this problem and the "/" replace the ".". The [replaceAll()](https://beginnersbook.com/2013/12/java-string-replace-replacefirst-replaceall-method-examples/) method replaces all the occurrences of old string with the new string.  
+   
+   **Corrected:**
     
         String formattedEmailAddress = emailAddress.replaceAll("\\.", "/"); 
     
