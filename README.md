@@ -55,7 +55,8 @@ Scoring criteria:
   
     String formattedEmailAddress = emailAddress.replaceAll(".", "/");  
   
-  The problem was that the "." are not being replaced by "/" by editing the the regex to "\\.", we solve this problem and the "." replace the "."  
+  The problem was that the "." are not being replaced by "/" by editing the the regex to "\\.", we solve this problem and the "." replace the ".".  
+     **Corrected:**
     
     String formattedEmailAddress = emailAddress.replaceAll("\\.", "/"); 
     
@@ -68,7 +69,9 @@ Scoring criteria:
             word = new StringBuffer('F');
         case 2:
             word = new StringBuffer('T');
-The Y, F and I are chars and can not be added to a string so we need to convert them to strings.
+The Y, F and I are chars and can not be added to a string so we need to convert them to strings.  
+  
+  **Corrected:**
 
       case 0:
           word = new StringBuffer("Y");
@@ -80,6 +83,30 @@ The Y, F and I are chars and can not be added to a string so we need to convert 
 
         switch (random.nextInt(2)) 
         
-   If the bound is only 2 it will only take the case 0 and 1 and ignore case 2 so we need to add the bound to 3
-    
+   If the bound is only 2 it will only take the case 0 and 1 and ignore case 2 so we need to add the bound to 3.  
+      **Corrected:**
+      
         switch (random.nextInt(3)) 
+        
+4. ** Fourth Bug**
+      
+ 
+         case 0:
+            word = new StringBuffer("Y");
+         case 1:
+            word = new StringBuffer("F"); 
+         case 2:
+             word = new StringBuffer("T");
+             
+   As there is no break in each case only the last case runs so we need to add a break point after every case so if the random selects that case it breaks.  
+   **Corrected:**
+   
+         case 0:
+          word = new StringBuffer("Y");
+          break;
+        case 1:
+          word = new StringBuffer("F");
+          break;
+        case 2:
+          word = new StringBuffer("T");
+           break;

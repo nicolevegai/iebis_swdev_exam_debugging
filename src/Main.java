@@ -23,6 +23,7 @@ public class Main {
             case 2:
                 word = new StringBuffer("T");
                 break; //2. the Y, F and I are chars and can not be added to a string so we need to convert them to strings.
+            //4. as there is no break in each case only the last case runs  so we need to add a break point after every case so if the random selects that case it breaks
         }
 
         word.append('o');
