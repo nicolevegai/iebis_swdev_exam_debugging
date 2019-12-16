@@ -52,8 +52,7 @@ Scoring criteria:
 ## BUGS FOUND
 1. **First Bug**
                
-  
-    String formattedEmailAddress = emailAddress.replaceAll(".", "/");  
+        String formattedEmailAddress = emailAddress.replaceAll(".", "/");  
   
   The problem was that the "." are not being replaced by "/" by editing the the regex to "\\.", we solve this problem and the "." replace the ".".  
      **Corrected:**
@@ -69,7 +68,7 @@ Scoring criteria:
             word = new StringBuffer('F');
         case 2:
             word = new StringBuffer('T');
-The Y, F and I are chars and can not be added to a string so we need to convert them to strings.  
+The Y, F and I are chars and can the StringBuffer method accepts only strings so we need to convert them to strings.  
   
   **Corrected:**
 
@@ -79,11 +78,12 @@ The Y, F and I are chars and can not be added to a string so we need to convert 
           word = new StringBuffer("F");
       case 2:
           word = new StringBuffer("T");
+          
 3. **Third Bug**
 
         switch (random.nextInt(2)) 
         
-   If the bound is only 2 it will only take the case 0 and 1 and ignore case 2 so we need to add the bound to 3.  
+   If the boundary of the random is only 2 it will only take the case 0 and 1 and ignore case 2 so we need to add the bound to 3.  
       **Corrected:**
       
         switch (random.nextInt(3)) 
@@ -98,7 +98,7 @@ The Y, F and I are chars and can not be added to a string so we need to convert 
          case 2:
              word = new StringBuffer("T");
              
-   As there is no break in each case only the last case runs so we need to add a break point after every case so if the random selects that case it breaks.  
+   As there is no break in each case only one case runs so we need to add a break point after every case so if the random selects that case it breaks and continues to apeend the "o", "u", "r" 
    **Corrected:**
    
          case 0:
