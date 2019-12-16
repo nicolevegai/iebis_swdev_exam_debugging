@@ -84,6 +84,7 @@ Scoring criteria:
         switch (random.nextInt(2)) 
         
      If the boundary of the random is only 2 it will only take the case 0 and 1 and ignore case 2 so we need to add the bound to 3.  
+     
       **Corrected:**
       
         switch (random.nextInt(3)) 
